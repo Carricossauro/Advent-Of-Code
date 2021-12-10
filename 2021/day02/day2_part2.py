@@ -2,7 +2,7 @@
 
 position = [0,0,0]
 
-file = open("day2_part2.txt", 'r')
+file = open("day2.txt", 'r')
 
 for line in file.readlines():
 	lista = line.split()

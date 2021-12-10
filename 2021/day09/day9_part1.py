@@ -1,6 +1,6 @@
 # Part 1
 
-file = open("day9_part1.txt",'r')
+file = open("day9.txt",'r')
 
 matrix = []
 

@@ -65,7 +65,7 @@ def solve(line):
 	print(n)
 	return n
 
-file = open("day8_part1.txt",'r')
+file = open("day8.txt",'r')
 
 lines = file.readlines()
 

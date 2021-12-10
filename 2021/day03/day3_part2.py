@@ -1,7 +1,7 @@
 # Part 2
 
 # co2
-file = open("day3_part2.txt",'r')
+file = open("day3.txt",'r')
 lines = file.readlines()
 
 for pos in range(len(lines[0])-1):
@@ -19,7 +19,7 @@ co2 = lines[0][:-1]
 file.close()
 
 # oxygen
-file = open("day3_part2.txt",'r')
+file = open("day3.txt",'r')
 lines = file.readlines()
 
 for pos in range(len(lines[0])-1):

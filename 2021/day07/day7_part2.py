@@ -1,6 +1,6 @@
 # Part 2
 
-file = open("day7_part1.txt", 'r')
+file = open("day7.txt", 'r')
 
 lista = list(map(int, file.readline().split(',')))
 print(lista)

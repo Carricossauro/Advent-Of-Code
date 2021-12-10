@@ -1,6 +1,6 @@
 # Part 1
 
-file = open("day10_part1.txt",'r')
+file = open("day10.txt",'r')
 
 lines = file.readlines()
 

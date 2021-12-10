@@ -19,7 +19,7 @@ def gameOver(matrix):
 
 	return False
 
-file = open("day4_part1.txt", 'r')
+file = open("day4.txt", 'r')
 
 bingo = list(map(int, file.readline().strip().split(',')))
 print(bingo)

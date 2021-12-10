@@ -17,7 +17,7 @@ def solve(line,total):
 			total += 1
 	return total
 
-file = open("day8_part1.txt",'r')
+file = open("day8.txt",'r')
 
 lines = file.readlines()
 

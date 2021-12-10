@@ -1,6 +1,6 @@
 # Part 2
 
-file = open("day1_part2.txt", 'r')
+file = open("day1.txt", 'r')
 increases = 0
 sums = []
 

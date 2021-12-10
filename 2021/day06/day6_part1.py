@@ -1,6 +1,6 @@
 # Part 1
 
-file = open("day6_part1.txt",'r')
+file = open("day6.txt",'r')
 
 fishes = list(map(int, file.readline()[:-1].split(',')))
 

@@ -4,7 +4,7 @@ gamma_binary = ""
 epsilon_binary = ""
 lines = []
 
-file = open("day3_part1.txt", 'r')
+file = open("day3.txt", 'r')
 
 lines = file.readlines()
 

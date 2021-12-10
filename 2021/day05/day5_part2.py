@@ -1,6 +1,6 @@
 # Part 2
 
-file = open("day5_part2.txt", 'r')
+file = open("day5.txt", 'r')
 
 line = file.readline()
 lista = []

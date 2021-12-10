@@ -1,7 +1,7 @@
 # Part 2
 from functools import reduce
 
-file = open("day9_part1.txt", 'r')
+file = open("day9.txt", 'r')
 
 matrix = []
 
