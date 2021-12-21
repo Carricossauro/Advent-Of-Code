@@ -16,5 +16,6 @@ Good evening! Today is the day that I show to you, as a gift, my adventures in c
 - Day 11 - [Python](<2021/day11>)
 - Day 12 - [Python](<2021/day12>)
 - Day 13 - [Python](<2021/day13>)
-- Day 14 - [Python](<2021/day14>) (Incomplete)
-
+- Day 14 - [Python](<2021/day14>)
+- Day 15 - [Python](<2021/day15>) (day 2 doesn't work/is too slow)
+- Day 16 - [Python](<2021/day16>) 
