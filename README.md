@@ -20,3 +20,4 @@ Good evening! Today is the day that I show to you, as a gift, my adventures in c
 - Day 15 - [Python](<2021/day15>) (day 2 doesn't work/is too slow)
 - Day 16 - [Python](<2021/day16>) 
 - Day 17 - [Python](<2021/day17>)
+- Day 18 - [Python](<2021/day18>)
