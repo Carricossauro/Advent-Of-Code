@@ -1,29 +1,45 @@
-# Part 1
+# Part 2
 
 from math import ceil, floor
 import re
+from typing import NewType
 from pyparsing import nestedExpr
 
 
 # Data Structure to represent Binary Tree
 class Pair:
-	def __init__(self, previous):
-		self.left = None
-		self.right = None
-		self.data = None
-		self.previous = previous
-	def treeString(self):
-		ignore = "_"
-		if self.data != None:
-			return f"{self.data}"
-		else:
-			return f"[{self.left.treeString() if self.left != None else ignore},{self.right.treeString() if self.right != None else ignore}]"
+    def __init__(self, previous):
+        self.left = None
+        self.right = None
+        self.data = None
+        self.previous = previous
 
-	def magnitude(self):
-		if self.data == None:
-			return 3 * self.left.magnitude() + self.right.magnitude() * 2
-		else:
-			return self.data
+    def __str__(self):
+        return self.treeString()
+
+    def treeString(self):
+        ignore = "_"
+        if self.data != None:
+            return f"{self.data}"
+        else:
+            return f"[{self.left.treeString() if self.left != None else ignore},{self.right.treeString() if self.right != None else ignore}]"
+
+    def magnitude(self):
+        if self.data == None:
+            return 3 * self.left.magnitude() + self.right.magnitude() * 2
+        else:
+            return self.data
+    
+    def clone(self):
+        newPair = Pair(None)
+        if self.data != None:
+            newPair.data = self.data
+        else:
+            newPair.left = self.left.clone()
+            newPair.right = self.right.clone()
+            newPair.left.previous = newPair
+            newPair.right.previous = newPair
+        return newPair
 
 # Create new Binary Tree node with regular number
 def newNumber(value, previous):
@@ -151,14 +167,23 @@ n = None
 
 nested_braces = nestedExpr('[', ']')
 
-for i, line in enumerate(lines):
-	nested_list = nested_braces.parseString(line.replace(',', ' ')).asList()[0]
-	if i == 0:
-		n = parse(nested_list, None)
-	else:
-		n2 = parse(nested_list, None)
-		n = addition(n, n2)
-		#break
-	print(n.treeString())
+pairs = []
 
-print(n.magnitude())
+for i, line in enumerate(lines):
+    nested_list = nested_braces.parseString(line.replace(',', ' ')).asList()[0]
+    n = parse(nested_list, None)
+    pairs.append(n)
+
+magnitudes = []
+
+for i, p1 in enumerate(pairs):
+    for j, p2 in enumerate(pairs):
+        if i != j:
+            pair = addition(p1.clone(), p2.clone())
+            magnitudes.append(pair.magnitude())
+            print("p1", p1)
+            print("p2", p2)
+            print("result", pair)
+            print("magnitude", magnitudes[-1])
+
+print(max(magnitudes))
