@@ -40,9 +40,10 @@ class Solver:
     # requires self.hashmap to be initialized
     # remove the first lens with the given label
     def remove_lens(self, label):
-        for i, (l,f) in enumerate(self.hashmap[self.hash(label)]):
+        for i, (l, f) in enumerate(self.hashmap[self.hash(label)]):
             if l == label:
                 self.hashmap[self.hash(label)].pop(i)
+                return None
 
     def part2(self):
         self.hashmap = [[] for _ in range(256)]
