@@ -34,3 +34,4 @@ if __name__ == '__main__':
             print(solver.part2())
     else:
         print("Usage: python3 solver.py [1 / 2] [test / test2 / 1 / 2]")
+        print("Filenames: test.txt\n\t   test2.txt\n\t   input1.txt\n\t   input2.txt")
