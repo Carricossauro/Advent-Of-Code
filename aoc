@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# aoc [day] [part] [input]
+# eg. aoc 14 1 test
+
+if [ $# -ne 3 ]; then
+    echo "Usage: aoc [day] [part] [input]"
+    exit 1
+fi
+
+cd $AOC_PATH
+cd $AOC_YEAR
+
+day=$(printf "%02d" $1)
+cd "day$day"
+
+time python3 solver.py $2 $3
