@@ -4,6 +4,7 @@ from math import floor, log10
 
 # memoization decorator for part 2
 # stores cache based on the current iteration and stone
+# not sure why i didn't just use functools.lru_cache
 cache = {}
 def use_cache(f):
     def wrapper(stone, iteration):
@@ -24,7 +25,7 @@ class Solver:
     def part1(self):
         # i couldn't initially see how to solve this smartly
         # so i figured part 1 could probably be brute forced
-        
+
         for _ in range(25):
             # for every blink (iteration), apply the stone transformation rules
             new_stones = []
@@ -60,7 +61,7 @@ class Solver:
             total += stone_iteration(stone, 75)
         
         return total
-    
+
 @use_cache
 def stone_iteration(stone, iteration):
     # iteration starts at 75, goes down to 0
