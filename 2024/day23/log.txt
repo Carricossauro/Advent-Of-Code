@@ -1,0 +1,10 @@
+1077
+
+real	0m0.201s
+user	0m0.159s
+sys	0m0.040s
+bc,bf,do,dw,dx,ll,ol,qd,sc,ua,xc,yu,zt
+
+real	0m0.156s
+user	0m0.135s
+sys	0m0.021s
