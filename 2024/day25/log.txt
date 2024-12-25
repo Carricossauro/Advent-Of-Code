@@ -1,0 +1,10 @@
+3249
+
+real	0m0.087s
+user	0m0.071s
+sys	0m0.000s
+None
+
+real	0m0.017s
+user	0m0.018s
+sys	0m0.000s
