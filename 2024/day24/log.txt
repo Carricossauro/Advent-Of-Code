@@ -1,0 +1,10 @@
+41324968993486
+
+real	0m0.722s
+user	0m0.704s
+sys	0m0.606s
+({('AND', 'OR'): 85, ('OR', 'XOR'): 42, ('XOR', 'XOR'): 44, ('', 'XOR'): 90, ('', 'AND'): 90, ('OR', 'AND'): 42, ('XOR', 'AND'): 44, ('XOR', 'OR'): 3, ('AND', 'AND'): 2, ('AND', 'XOR'): 2}, 'bmn,jss,mvb,rds,wss,z08,z18,z23')
+
+real	0m0.770s
+user	0m0.857s
+sys	0m0.533s
