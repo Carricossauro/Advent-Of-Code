@@ -17,3 +17,5 @@ day=$(printf "%02d" $1)
 cd "day$day"
 
 { time python3 solver.py 1 $2 && time python3 solver.py 2 $3; } >log.txt 2>&1
+
+cat log.txt
